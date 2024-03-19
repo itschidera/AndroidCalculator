@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="ELECTRICTY BILL CALCULATOR"
+        android:layout_margin="15dp"/>
+
+    <EditText
+        android:id="@+id/etMorningUsage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Morning usage in kwh"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:layout_margin="15dp"/>
+
+    <EditText
+        android:id="@+id/etEveningUsage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Evening usage in kwh"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:layout_margin="15dp"/>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Use Renewable Energy Source?"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/tvErrorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_margin="15dp"
+        android:textColor="#E50404"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:layout_margin="15dp" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_margin="15dp" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvBillRecipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_margin="15dp"/>
+
+</LinearLayout>
